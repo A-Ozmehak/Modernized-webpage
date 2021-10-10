@@ -1,0 +1,80 @@
+/*Reusable clases */
+
+.flex {display: flex;}
+.justify-center {justify-content: center;}
+.column {flex-direction: column;}
+.row {flex-direction: row;}
+
+/*main*/
+main {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.font-maincontent h2 {
+    font-size: 35px;
+    padding: 3px 0;
+}
+
+p {
+    font-size: 15px;
+    padding-bottom: 1rem;
+}
+/*Animering*/
+form {
+    padding: 1rem 0;
+    animation: 2s slideIn;
+}
+
+@keyframes slideIn {
+    from {margin-top: 100%;}
+    to {margin-top: 0%;}
+}
+
+/*Innehåll i formulär*/
+input {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border-color: lightsteelblue;
+}
+
+:required {
+    border-color: red;
+}
+
+label {
+    font-size: 14px;
+}
+.roomtype {
+    padding: 1rem 0;
+}
+
+.number {
+    width: 2.5rem;
+}
+
+.optional {
+    padding: 1rem 0;
+}
+
+textarea {
+        height: 4rem;
+        border-radius: 5px;
+}
+
+/*Skicka-knapp*/
+
+button {
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+#send {
+    width: 6rem;
+    margin:1rem 0;
+}
+
+#send:hover {
+    background-color: gray;
+}
