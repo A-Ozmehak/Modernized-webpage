@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boka - Kungsbacka Vandrarhem</title>
+    <link rel="icon" href="https://www.kungsbackavandrarhem.se/wp-content/uploads/2020/01/cropped-kungsbacka-vandrarhem-logo-32x32.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/font.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="CSS/tablet.css">
+    <link rel="stylesheet" href="CSS/desktop.css">
+    
+</head>
+<body class="flex column">
+    <header>
+        <nav class="header-nav">
+                <div class="dropdown">
+                    <button class="dropbtn"><span class="material-icons">menu</span></button>
+                    <div class="dropdown-content none">
+                        <a href="index.html">Hem</a>
+                        <a href="information">Information</a>
+                        <a href="price">Priser och villkor</a>
+                        <a href="group">Gruppvillkor</a>
+                        <a href="font.html">Boka</a>
+                        <a href="about-us">Om oss</a>
+                        <a href="pictures">Bilder</a>
+                        <a href="history">Historia</a>
+                    </div>
+                </div>
+                <div class="header-logo flex justify-center">
+                    <img src="img/kungsbacka-vandrarhem-logo.png" alt="kungsbacka vandrarhem logo">
+                </div>
+            <div class="header-navbar">
+                    <a class="justify" href="index.html">Hem</a>
+
+                    <div class="dropdown-info">
+                        <a class="button-info" href="Information">Information</a>
+                    
+                        <div class="dropdown-content-info">
+                            <a href="Price">Priser och villkor</a>
+                            <a href="Group">Gruppvillkor</a>
+                        </div>
+
+                    </div>    
+                    <a class="justify" href="font.html">Boka</a>
+                    <div class="dropdown-info">
+                        <a class="justify button-info" href="About-us">Om oss</a>
+
+                        <div class="dropdown-content-info">
+                            <a href="pictures">Bilder</a>
+                            <a href="History">Historia</a>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>  
+
+
+
+    <main class="font-main flex justify-center column">
+
+        <div class="font-maincontent">
+            <h2>Boka Kungsbacka Vandrarhem</h2>
+            <p>Gör en bokningsförfrågan genom att fylla i och skicka formuläret nedan.
+                Du kommer sedan att få en bekräftelse per e-post när din bokning är klar.</p>
+            <p>Läs bokningsreglerna</p>
+<!--Formulär-->
+            <form class="column flex">
+            <label id="first/last">Namn/Name</label>
+            <input type="text" name="first/last" id="name" required>
+            <label id="streetadress">Gatuadress/Street address</label>
+            <input type="text" name="adress" id="street">
+            <label id="adress">Postnummer/Postal code</label>
+            <input type="text" name="postaladress" id="street2and">
+            <label id="city">Postort/City</label>
+            <input type="text" name="city" id="street3rd">
+            <label id="land">Land/Country</label>
+            <input type="text" name="land" id="country" required>
+            <label id="phonenumber">Telefon/Phone</label>
+            <input type="text" name="number" id="phone" required>
+            <label id="mail">Email</label>
+            <input type="text" name="mail" id="email" required>
+            <label id="date">Ankomst/Arrival</label>
+            <input type="date" name="dates" id="arrival" required>
+            <label id="dep">Avresa/Departure</label>
+            <input type="date" name="date" id="departure" required>
+      
+            <div class="flex column roomtype">
+                <label id="singleroom">Enkel/Single</label>
+                <input type="radio" name="room" id="single" checked>
+                <label id="doubleroom">Dubble/Double</label>
+                <input type="radio" name="room" id="double">
+                <label id="morethen">Flerbädd/more than 2beds</label>
+                <input type="radio" name="room" id="more">
+            </div>
+      
+            <div class="flex column howMany">
+                <label id="adults">Vuxna/Adults</label>
+                <input class="number" type="number" name="adultsmax" id="adultsmax" min="0" max="10"> <br>
+                <label id="kids">Barn under 13år/Children under 13yr</label>
+                <input class="number" type="number" name="kidsmax" id="kidsmax" min="0" max="10">
+            </div>
+            <p>Tillval/Option</p>
+            <div class="flex column optional">
+                <label id="breakfast">Frukost/Breakfast</label>
+                <input type="checkbox" name="option" id="breakie">
+                <label id="cleaning">Städ/Cleaning</label>
+                <input type="checkbox" name="option" id="clean">
+                <label id="bedsheets">Lakan/Bedsheets</label>
+                <input type="checkbox" name="option" id="sheets">
+
+            </div>
+            <p>Meddelande/Message</p>
+            <textarea>
+
+            </textarea>
+                <button type="submit" id="send">Skicka</button>
+            </form>
+        </div>
+    </main>
+    
+  <footer>
+    <nav class="footer-nav">
+        <div class="copyright justify align">
+            &copy; 2021. All rights reserved.
+        </div>
+        <ul class="contactinfo justify align">
+            <li>Kungsbacka Vandrarhem</li>
+            <li>Kungsbacka Sköna Rum AB</li>
+            <li>Göteborgsvägen 515</li>
+            <li>434 96 Kungsbacka</li>
+            <li>0300 38160 / 0709 512601</li>
+        </ul>
+        
+    </nav>
+</footer>
+</body>
+</html>

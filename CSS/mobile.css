@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*reusable*/
+.flex { display: flex; }
+.justify-center { justify-content: center; }
+.justify { justify-self: center; }
+.align { align-self: center; }
+.none { display: none;}
+
+/*Element style*/
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header1 header2 header3"
+    "main1 main2 main3"
+    "footer1 footer2 footer3";
+
+    background-image: url(../img/background-forest.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    margin: 1rem 1rem 0 1rem;
+    width: 95%;
+    margin: auto;
+}
+
+header {
+    grid-column: header1 / header3;
+    border-bottom: solid 1px;
+    padding: 2rem 0;
+    background: rgba(160, 155, 155, 0.5);
+}
+
+main {
+    grid-column: main1 / main3;
+    background-color: white;
+    font-size: 10px;
+}
+
+footer {
+    grid-column: footer1 / footer3;
+    background: rgba(160, 155, 155, 0.5);
+}
+
+/*Hamburger meny mobile*/
+.dropbtn {
+    padding: 1px;
+    font-size: 4px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    left: 0;
+}
+
+.dropdown-content {
+    position: absolute;
+    min-height: 160px;
+    box-shadow: 0px 8px 16px 9px;
+    z-index: 1;
+    background: white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: grey;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+
+/*header element*/
+.header-nav {
+    margin: 0 1rem 0;
+} 
+
+.header-navbar {
+    list-style: none;
+    display: none;
+}
+
+/*Iconer*/
+.glob {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+/*Iconer i mainen*/
+.main-icons {
+    flex-direction: column;
+}
+
+/*main element*/
+.picture-slider {
+    width: 18rem;
+    height: 15rem;
+    background-image: url(../img/castle.jpg);
+    background-image: url(../img/fishing.jpg);
+    background-image: url(../img/kajak.jpg);
+    background-image: url(../img/kajaking.jpg);
+    background-image: url(../img/kungsbacka-vandrarhem.jpg);
+    background-image: url(../img/kungsbacka-vandrarhem1.jpg);
+    background-image: url(../img/View_over_Lygnern.JPG);
+    background-size: 18rem 15rem;
+    margin: auto;
+    animation: slider 20s infinite linear;
+}
+
+@keyframes slider {
+    0% { background-image: url(/img/castle.jpg); }
+    10% { background-image: url(../img/View_over_Lygnern.JPG); }
+    20% { background-image: url(../img/fishing.jpg); }
+    35% { background-image: url(../img/kajak.jpg);}
+    75% { background-image: url(../img/kajaking.jpg);}
+    85% { background-image: url(../img/kungsbacka-vandrarhem.jpg);}
+    100% { background-image: url(../img/kungsbacka-vandrarhem1.jpg)}
+}
+/*Innehåll frågeformuläret mainen*/
+.main-content {
+    width: 18rem;
+    margin: auto;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    justify-self: center;
+}
+
+.main-content p {
+    margin-top: 0.5rem;
+}
+
+.font-maincontent {
+    width: 95%;
+    margin: auto;
+}
+
+/*Texten i main första sidan*/
+h1 {
+    font-family: 'Scheherazade New', serif;
+    margin-top: 1rem;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: 'Ephesis', cursive;
+    font-size: 25px;
+}
+
+/*Boka knappen på första sidan*/
+.main-button {
+    text-align: center;
+   
+}
+
+.book-button {
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px gray solid;
+    font-size: 20px;
+    
+    text-decoration: none;
+    color: black;
+}
+
+.book-button:hover {
+    background: gray;
+}
+
+/*footer element*/
+.footer-nav {
+    font-size: 12px;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "footerstamp footercontent"
+}
+
+.contactinfo {
+    list-style: none;
+    grid-area: footercontent;
+    margin: 0 2px;
+}
+
+.directions-map {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+} 
+
+.directions {
+    font-size: 1rem;
+    align-self: center;
+    padding: 2rem 0 1rem 0;
+}
+
+.map {
+   width: 15rem;
+   height: 10rem;
+   margin: auto;
+}
+
+

@@ -1,0 +1,31 @@
+@media screen and (min-width:992px) {
+    /*Desktop*/
+
+    .header-navbar {
+       display: flex;
+       justify-content: space-around;
+    }
+    
+    .picture-slider {
+        margin: auto;
+        width: 45rem;
+        height: 25rem;
+        background-size: 45rem 25rem;
+    }
+
+    .main-content {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        width: 45rem;
+
+    }
+
+    .main-icons {
+        height: 20rem;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+   
+
+}
