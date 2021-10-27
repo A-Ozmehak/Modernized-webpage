@@ -48,6 +48,14 @@
         width: 35rem;
     }
 
+    .main-icons {
+        font-size: 1.5rem;
+    }
+
+    .material-icons {
+        padding-bottom: 1rem;
+    }
+
     /*main formulär*/
     .font-maincontent {
         width: 35rem;
