@@ -103,6 +103,7 @@ footer {
 /*Iconer i mainen*/
 .main-icons {
     flex-direction: column;
+    font-size: 1rem;
 }
 
 /*main element*/
@@ -136,11 +137,14 @@ footer {
     margin: auto;
     font-size: 0.8rem;
     margin-bottom: 2rem;
-    justify-self: center;
 }
 
 .main-content p {
     margin-top: 0.5rem;
+}
+
+.price {
+    display: none;
 }
 
 .font-maincontent {
