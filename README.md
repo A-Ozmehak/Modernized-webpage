@@ -36,5 +36,5 @@ Projektet:
 - Bildspelet tog det lite tid att få till, för bilderna gled utanför bodyn så fick testa flera olika sätt men till slut så var det inte alls så svårt. 
 
 
-Anna Özmehak & Jannie Bäckman Kuurne
+[Anna Özmehak](https://github.com/A-Ozmehak)
 [Jannie Bäckman Kuurne](https://github.com/Jannie87)
