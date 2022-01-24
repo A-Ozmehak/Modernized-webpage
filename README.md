@@ -37,3 +37,4 @@ Projektet:
 
 
 Anna Özmehak & Jannie Bäckman Kuurne
+[Jannie Bäckman Kuurne](https://github.com/Jannie87)
