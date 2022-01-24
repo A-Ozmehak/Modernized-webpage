@@ -35,6 +35,8 @@ Projektet:
 - Om man hade varit mer insatt i hur Git funkar så hade det nog gått lite smidigare.
 - Bildspelet tog det lite tid att få till, för bilderna gled utanför bodyn så fick testa flera olika sätt men till slut så var det inte alls så svårt. 
 
+[Demo](https://a-ozmehak.github.io/Modernized-webpage/)
+
 
 [Anna Özmehak](https://github.com/A-Ozmehak)
 [Jannie Bäckman Kuurne](https://github.com/Jannie87)
